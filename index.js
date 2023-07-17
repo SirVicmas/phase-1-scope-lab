@@ -1,18 +1,12 @@
 // // Write your solution in this file!
 var customerName = "bob"
-function fixTheScope() {
-    return customerName;
-}
-console.log(fixTheScope());
- 
-function upperCaseCustomerName() {
-   let customerName = "bob";
-   customerName = customerName.toUpperCase();
-   return customerName;
-}
-console.log(upperCaseCustomerName());
+var bestCustomer;
 
-bestCustomer;
+function upperCaseCustomerName() {
+    if (customerName) {
+        customerName = customerName.toUpperCase();
+    }
+}
 
 function setBestCustomer() {
     bestCustomer = 'not bob';
